@@ -32,6 +32,16 @@ const HomeScreen = ({navigation}: {navigation: any}) => {
       onPress={() => navigation.navigate('Table')}
       />
 
+      <Button
+      title="Go to Another List Demo"
+      onPress={() => navigation.navigate('AnotherList')}
+      />
+
+      <Button
+      title="Go to Grid View Demo"
+      onPress={() => navigation.navigate('GridView')}
+      />
+
       <TouchableOpacity
       onPress={() => navigation.navigate('Counter')}>
         <Text style={styles.styleMain}>

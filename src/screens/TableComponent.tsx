@@ -2,10 +2,12 @@
 import React, { Component } from 'react';
 
 import { View, StyleSheet, ScrollView } from 'react-native';
-import { Row, Table } from 'react-native-table-component';
+import { Table, Row, Rows } from 'react-native-table-component';
+
 
 //add <any, any> types to solve ts(2339) error
 export default class TableComponent extends Component<any, any> {
+  [x: string]: any;
   constructor({props}: {props: any}) {
     super(props);
     this.state = {

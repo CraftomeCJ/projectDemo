@@ -1,7 +1,6 @@
 //this will be one of the many recipe page which need listScreen with table to list ingredients & cooking directions and 4 image carousel
 import { StyleSheet, Text, View, FlatList } from 'react-native'
 import React from 'react'
-import { Row, Table } from 'react-native-table-component';
 
 const ListScreen = () => {
   const ingredientsList = [
@@ -29,16 +28,15 @@ const ListScreen = () => {
     //horizontal
     showsHorizontalScrollIndicator={false}
     showsVerticalScrollIndicator={false}
-    keyExtractor={(ingredient) => ingredient.name}
+    keyExtractor={(ingredient: { name: any }) => ingredient.name}
     data={ingredientsList}
-    renderItem={({item}) => {
+    renderItem={({item}:{item:any}) => {
       return (
       <Text style={styles.textStyle}>
         {item.name}: {item.amount}
       </Text>
       )
     }}
-
     />
   )
 }
