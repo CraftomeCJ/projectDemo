@@ -1,6 +1,7 @@
 //this will be one of the many recipe page which need listScreen with table to list ingredients & cooking directions and 4 image carousel
 import { StyleSheet, Text, View, FlatList } from 'react-native'
 import React from 'react'
+import { Row, Table } from 'react-native-table-component';
 
 const ListScreen = () => {
   const ingredientsList = [
@@ -47,8 +48,22 @@ export default ListScreen
 const styles = StyleSheet.create({
   textStyle: {
     marginVertical: 10,
+    textAlign: 'center',
     fontSize: 20,
     color: 'red',
     backgroundColor: 'lightyellow'
+  },
+  container: {
+    flex: 1,
+    padding: 18,
+    paddingTop: 25
+  },
+  headerWrapper: {
+    height: 60,
+    backgroundColor: '#BAEFBE'
+  },
+  row: {
+    height: 60,
+    backgroundColor: '#F6F7Fb',
   }
 })
