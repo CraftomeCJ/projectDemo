@@ -33,7 +33,7 @@ const ListScreen = () => {
     renderItem={({item}) => {
       return (
       <Text style={styles.textStyle}>
-        {item.name} {item.amount}
+        {item.name}: {item.amount}
       </Text>
       )
     }}
