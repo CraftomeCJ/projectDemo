@@ -5,7 +5,7 @@ import ComponentsScreen from "./src/screens/ComponentsScreen";
 import ListScreen from "./src/screens/ListScreen";
 import ImageScreen from "./src/screens/ImageScreen";
 import Counter from "./src/screens/Counter";
-import TableComponent from "./src/screens/TableComponent";
+//import TableComponent from "./src/screens/TableComponent";
 import AnotherListScreen from "./src/screens/AnotherListScreen";
 import GridViewListScreen from "./src/screens/GridViewListScreen";
 
@@ -16,7 +16,7 @@ const navigator = createStackNavigator(
     List: ListScreen,
     Image: ImageScreen,
     Counter: Counter,
-    Table: TableComponent,
+    //Table: TableComponent,
     AnotherList: AnotherListScreen,
     GridView: GridViewListScreen
 
